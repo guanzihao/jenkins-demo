@@ -27,6 +27,10 @@ public class IndexController {
             name = String.valueOf(UUID.randomUUID()).replaceAll("-", "");
         }
 
+        String str = "=================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>%s<<<<<<<<<<<<<<<<<<<<";
+
+        System.out.println(String.format(str,name));
+
         return ResponseEntity.ok(new ApiResult(ApiResultConstant.SUCCESS,name));
     }
 
