@@ -29,7 +29,7 @@ public class IndexController {
 
         String str = "=================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>%s<<<<<<<<<<<<<<<<<<<<";
 
-        System.out.println(String.format(str,name));
+        System.out.println(String.format(str,System.currentTimeMillis() + name));
 
         return ResponseEntity.ok(new ApiResult(ApiResultConstant.SUCCESS,name));
     }
